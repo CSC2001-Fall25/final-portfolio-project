@@ -14,7 +14,7 @@
   <header class="site-header">
     <div class="nav-inner">
       <div class="logo">BG • Lincoln U</div>
-      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
       <nav id="nav-menu">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -33,7 +33,7 @@
       <h1>Hi, I’m Bryan Green.</h1>
       <p class="hero-subtitle">
         I’m a Software Engineering student who enjoys building interactive apps,
-        modern interfaces, and projects that combine tech + creativity.
+        modern interfaces, and projects that combine tech and creativity.
       </p>
 
       <div class="hero-tags">
@@ -45,6 +45,7 @@
 
       <div class="hero-actions">
         <a href="#projects" class="btn primary">View My Projects</a>
+        <!-- Make sure resume.pdf exists in the repo root -->
         <a href="resume.pdf" class="btn ghost" target="_blank">Download Resume</a>
       </div>
     </div>
@@ -56,7 +57,7 @@
         <div class="orbit-planet orbit-planet-2"></div>
         <div class="orbit-planet orbit-planet-3"></div>
       </div>
-      <p class="hero-caption">Orbit animation inspired by my Planet Quiz Game</p>
+      <p class="hero-caption">Orbit animation inspired by my Planet Quiz Game.</p>
     </div>
   </section>
 
@@ -76,8 +77,9 @@
           are simple, clean, and fun to use.
         </p>
         <p>
-          I also balance an internship under Project Success and a job working in the
-          Lincoln U Café — sharpening my communication, time management, and teamwork skills.
+          I balance my academics with an internship under Project Success and a job
+          working in the Lincoln U Café, which keeps my communication, time management,
+          and teamwork skills sharp.
         </p>
       </div>
 
@@ -92,6 +94,7 @@
           <li>Communication</li>
           <li>Teamwork</li>
         </ul>
+        <p class="note">Tools: Eclipse, GitHub, MS Office, Code.org App Lab</p>
       </div>
 
       <div class="card reveal">
@@ -118,13 +121,13 @@
     <div class="timeline">
 
       <div class="timeline-item reveal">
-        <div class="timeline-dot"></div>
+        <class="timeline-dot"></class><div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3>Project Success Intern</h3>
           <p class="meta">2025 – Present</p>
           <p>
-            Supporting academic programs, communication, and project-driven
-            student success initiatives.
+            Supporting academic programs and project-based student success work, building communication
+            and organizational skills.
           </p>
         </div>
       </div>
@@ -135,8 +138,8 @@
           <h3>Café Staff – Lincoln University</h3>
           <p class="meta">2025 – Present</p>
           <p>
-            Serve students and staff, handle daily operations, improve
-            customer satisfaction, and manage high-paced work.
+            Serve students and staff, handle daily operations, improve customer satisfaction,
+            and manage high-paced work on campus.
           </p>
         </div>
       </div>
@@ -147,7 +150,7 @@
           <h3>Cashier – Food Lion</h3>
           <p class="meta">Nov 2022 – Present</p>
           <p>
-            Process orders, maintain quality service, and work with teams
+            Process orders, maintain store standards, and collaborate with coworkers
             in a busy retail environment.
           </p>
         </div>
@@ -159,7 +162,7 @@
           <h3>Cashier – Bozzelli’s</h3>
           <p class="meta">Summer 2022</p>
           <p>
-            Managed high-volume orders and customer experience during fast-paced shifts.
+            Managed high-volume orders and customer service during fast-paced restaurant shifts.
           </p>
         </div>
       </div>
@@ -171,7 +174,7 @@
   <section id="projects" class="section">
     <div class="section-header reveal">
       <h2>Projects</h2>
-      <p>Interactive apps, games, and class work.</p>
+      <p>Interactive apps, games, and prototypes.</p>
     </div>
 
     <div class="projects-grid">
@@ -181,7 +184,7 @@
         <p class="meta">JavaScript • Code.org App Lab</p>
         <p>
           Interactive quiz game using randomized planet facts, images, and multiple choice
-          logic. Includes scoring, screen transitions, and animations.
+          answers. Includes scoring, screen transitions, and sound effects.
         </p>
         <a href="https://studio.code.org/projects/applab/XIqH2hjD2ALOTX7WQ1atPT6CPZceyzUsN4VNgKr2Wi8"
            class="btn small" target="_blank">Open Project</a>
@@ -191,8 +194,8 @@
         <h3>Breakfast Chooser App</h3>
         <p class="meta">Java</p>
         <p>
-          Desktop-style app that recommends meals using random logic,
-          dropdowns, and simple UI.
+          A small Java app that suggests breakfast options using random logic and simple UI,
+          focusing on user flow and basic decision-making features.
         </p>
       </div>
 
@@ -200,8 +203,8 @@
         <h3>Workout Planner Prototype</h3>
         <p class="meta">Java • Android Studio</p>
         <p>
-          Early design for a fitness routine planner using user inputs,
-          weekly scheduling, and basic UI components.
+          Early design for a fitness routine planner with user preferences and weekly scheduling.
+          Built as a way to explore mobile development.
         </p>
       </div>
 
@@ -209,8 +212,8 @@
         <h3>Budgeting App (Hackathon)</h3>
         <p class="meta">TigerHacks • Team Project</p>
         <p>
-          Collaborative prototype built under time pressure with a 3-person team.
-          Focused on UI, planning, and user input flow.
+          Prototype budgeting app created with a 3-person team under time pressure. Focused on
+          inputs, simple UI, and planning features.
         </p>
       </div>
 
@@ -221,7 +224,7 @@
   <section id="leadership" class="section alt">
     <div class="section-header reveal">
       <h2>Leadership & Involvement</h2>
-      <p>Clubs, programs, and recognitions.</p>
+      <p>Clubs, programs, and recognition.</p>
     </div>
 
     <div class="about-grid">
@@ -231,8 +234,8 @@
         <ul class="bullet-list">
           <li>Computer Science Club – Member</li>
           <li>Tennis Club – Active Member</li>
-          <li>HBCU Career Prep Program</li>
-          <li>Children’s Religious Center – Volunteer</li>
+          <li>HBCU Career Prep Program (Parker Dewey)</li>
+          <li>Volunteer – Children’s Religious Center</li>
         </ul>
       </div>
 
@@ -249,8 +252,8 @@
       <div class="card reveal">
         <h3>Certifications</h3>
         <ul class="bullet-list">
-          <li>IBM – Intro to Artificial Intelligence</li>
-          <li>IBM – Web Development Fundamentals</li>
+          <li>IBM — Getting Started with Artificial Intelligence</li>
+          <li>IBM — Web Development Fundamentals</li>
         </ul>
       </div>
 
@@ -261,13 +264,16 @@
   <section id="quote-section" class="section">
     <div class="section-header reveal">
       <h2>Quick Inspiration</h2>
-      <p>Powered by a public quote API.</p>
+      <p>A small API widget built with JavaScript.</p>
     </div>
 
     <div class="card quote-card reveal">
-      <p id="quote-text">Click the button for a tech-inspired quote.</p>
+      <p id="quote-text">Click the button to get a quote.</p>
       <p id="quote-author" class="quote-author"></p>
       <button id="quote-btn" class="btn primary">Get Quote</button>
+      <p class="note">
+        This uses a public quote API and <code>fetch()</code> to load data without reloading the page.
+      </p>
     </div>
   </section>
 
@@ -275,7 +281,7 @@
   <section id="contact" class="section alt">
     <div class="section-header reveal">
       <h2>Contact</h2>
-      <p>Open to opportunities, conversations, and internships.</p>
+      <p>Open to internships, projects, and tech conversations.</p>
     </div>
 
     <div class="contact-grid">
@@ -294,8 +300,8 @@
       <div class="card reveal">
         <h3>What I’m Looking For</h3>
         <p>
-          I’m seeking internships, tech projects, and opportunities to develop
-          skills in software engineering, UI/UX, and app development.
+          I’m interested in internships, research opportunities, and projects where I can
+          learn more about software engineering, UI/UX, and app development.
         </p>
       </div>
     </div>
