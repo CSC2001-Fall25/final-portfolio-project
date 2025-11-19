@@ -7,7 +7,7 @@
   --bg-light: #f5f5fb;
   --card-bg: #ffffff;
   --text-main: #0b1020;
-  --text-muted: #5f6680;
+  --text-muted: #9ca3c7;
   --radius-lg: 18px;
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.18);
 }
@@ -25,8 +25,8 @@ html {
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #06122f 0, #020616 50%, #02020a 100%);
-  color: var(--text-main);
+  background: radial-gradient(circle at top, #071022 0, #020617 55%, #000 100%);
+  color: #e5e7f2;
 }
 
 /* Header / nav */
@@ -36,12 +36,12 @@ body {
   z-index: 20;
   backdrop-filter: blur(14px);
   background: linear-gradient(
-      to bottom,
-      rgba(2, 6, 22, 0.92),
-      rgba(2, 6, 22, 0.88),
-      transparent
+    to bottom,
+    rgba(2, 6, 23, 0.92),
+    rgba(2, 6, 23, 0.86),
+    transparent
   );
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
 }
 
 .nav-inner {
@@ -51,12 +51,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #e5e7f2;
 }
 
 .logo {
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   font-size: 0.95rem;
   text-transform: uppercase;
 }
@@ -92,11 +91,10 @@ body {
   max-width: 1080px;
   margin: 0 auto;
   padding: 3.5rem 1.25rem;
-  color: #e5e7f2;
 }
 
 .section.alt {
-  background: radial-gradient(circle at top, #04112e 0, #020616 60%);
+  background: radial-gradient(circle at top, #041022 0, #020617 65%);
   border-radius: 28px;
   margin-top: 2rem;
 }
@@ -107,12 +105,12 @@ body {
   grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
   gap: 2.5rem;
   align-items: center;
-  padding-top: 4.5rem;
+  padding-top: 4.2rem;
 }
 
 .hero-content h1 {
-  font-size: clamp(2.4rem, 4vw, 3.1rem);
-  margin-bottom: 0.4rem;
+  font-size: clamp(2.5rem, 4vw, 3.1rem);
+  margin-bottom: 0.45rem;
 }
 
 .hero-subtitle {
@@ -123,26 +121,26 @@ body {
 }
 
 .eyebrow {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   color: var(--orange-soft);
   margin-bottom: 0.4rem;
 }
 
 .hero-tags {
-  margin: 1.5rem 0;
+  margin: 1.4rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
 }
 
 .tag {
-  background: rgba(9, 9, 11, 0.7);
+  background: rgba(15, 23, 42, 0.9);
   border-radius: 999px;
   padding: 0.25rem 0.7rem;
   font-size: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.45);
 }
 
 .hero-actions {
@@ -166,7 +164,7 @@ body {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--orange) 0%, #ffb85a 100%);
+  background: linear-gradient(135deg, var(--orange) 0%, #ffc46a 100%);
   color: #111827;
   font-weight: 600;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
@@ -179,7 +177,7 @@ body {
 .btn.ghost {
   border-color: rgba(148, 163, 184, 0.6);
   color: #e5e7f2;
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.85);
 }
 
 .btn.ghost:hover {
@@ -224,7 +222,7 @@ body {
   height: 26px;
   border-radius: 50%;
   position: absolute;
-  animation: orbit 16s linear infinite;
+  animation: orbit 18s linear infinite;
 }
 
 .orbit-planet-1 {
@@ -235,9 +233,9 @@ body {
 
 .orbit-planet-2 {
   background: #38bdf8;
-  bottom: 10%;
+  bottom: 12%;
   left: 16%;
-  animation-duration: 22s;
+  animation-duration: 24s;
 }
 
 .orbit-planet-3 {
@@ -272,7 +270,7 @@ body {
 
 /* Cards & grids */
 .card {
-  background: rgba(15, 23, 42, 0.92);
+  background: rgba(15, 23, 42, 0.94);
   border-radius: var(--radius-lg);
   padding: 1.4rem 1.5rem;
   box-shadow: var(--shadow-soft);
@@ -328,7 +326,7 @@ body {
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   font-size: 0.78rem;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.4);
 }
 
 .bullet-list {
@@ -345,7 +343,7 @@ body {
 .timeline {
   display: grid;
   gap: 1.3rem;
-  border-left: 1px solid rgba(148, 163, 184, 0.4);
+  border-left: 1px solid rgba(148, 163, 184, 0.45);
   padding-left: 1.2rem;
 }
 
@@ -434,6 +432,10 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .section {
+    padding: 3rem 1rem;
+  }
 }
 
 @media (max-width: 720px) {
@@ -456,9 +458,5 @@ body {
 
   .nav-toggle {
     display: inline-block;
-  }
-
-  .section {
-    padding: 3rem 1rem;
   }
 }
