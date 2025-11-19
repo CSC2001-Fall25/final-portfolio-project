@@ -1,6 +1,4 @@
-// -----------------------------
-// Mobile Navigation Toggle
-// -----------------------------
+// Mobile nav toggle
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 
@@ -17,11 +15,7 @@ if (navToggle && navMenu) {
   });
 }
 
-
-
-// -----------------------------
-// Reveal-on-Scroll Animation
-// -----------------------------
+// Scroll reveal using IntersectionObserver
 const reveals = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -39,15 +33,11 @@ if ("IntersectionObserver" in window) {
 
   reveals.forEach(el => observer.observe(el));
 } else {
-  // Fallback if browser doesn't support IntersectionObserver
+  // Fallback: just show everything
   reveals.forEach(el => el.classList.add("show"));
 }
 
-
-
-// -----------------------------
-// WORKING QUOTE GENERATOR (ZENQUOTES API)
-// -----------------------------
+// Quote API widget
 const quoteBtn = document.getElementById("quote-btn");
 const quoteText = document.getElementById("quote-text");
 const quoteAuthor = document.getElementById("quote-author");
@@ -58,21 +48,20 @@ if (quoteBtn && quoteText && quoteAuthor) {
     quoteBtn.textContent = "Loading…";
 
     try {
-      // reliable API for GitHub Pages
-      const response = await fetch("https://zenquotes.io/api/random");
+      const response = await fetch("https://api.quotable.io/random?tags=technology|inspirational");
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
       const data = await response.json();
-
-      quoteText.textContent = `"${data[0].q}"`;
-      quoteAuthor.textContent = `— ${data[0].a}`;
-    } catch (error) {
-      console.error("Quote API error:", error);
-      quoteText.textContent = "Could not load a quote right now.";
+      quoteText.textContent = `"${data.content}"`;
+      quoteAuthor.textContent = data.author ? `— ${data.author}` : "";
+    } catch (err) {
+      quoteText.textContent = "Could not load a quote right now. Try again in a moment.";
       quoteAuthor.textContent = "";
+      console.log(err);
     } finally {
       quoteBtn.disabled = false;
-      quoteBtn.textContent = "Get Quote";
+      quoteBtn.textContent = "Get a quote";
     }
   });
-} else {
-  console.warn("Quote widget elements not found in DOM.");
 }
