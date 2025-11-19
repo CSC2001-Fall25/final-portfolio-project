@@ -1,0 +1,27 @@
+/* Lincoln University Theme */
+:root {
+  --navy: #00205B;
+  --orange: #FF6A13;
+  --white: #ffffff;
+  --light-gray: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light-gray);
+  color: var(--navy);
+}
+
+/* Navigation Bar */
+nav {
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+nav a {
+  co
