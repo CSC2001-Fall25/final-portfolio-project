@@ -1,4 +1,6 @@
-// Mobile nav toggle
+// -----------------------------
+// Mobile Navigation Toggle
+// -----------------------------
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 
@@ -7,7 +9,6 @@ if (navToggle && navMenu) {
     navMenu.classList.toggle("open");
   });
 
-  // Close menu when clicking a link
   navMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("open");
@@ -15,7 +16,9 @@ if (navToggle && navMenu) {
   });
 }
 
-// Scroll reveal using IntersectionObserver
+// -----------------------------
+// Reveal-on-Scroll Animation
+// -----------------------------
 const reveals = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -33,11 +36,13 @@ if ("IntersectionObserver" in window) {
 
   reveals.forEach(el => observer.observe(el));
 } else {
-  // Fallback: just show everything
+  // Fallback if browser doesn't support IntersectionObserver
   reveals.forEach(el => el.classList.add("show"));
 }
 
-// Quote API widget
+// -----------------------------
+// Quote Generator (TypeFit API)
+// -----------------------------
 const quoteBtn = document.getElementById("quote-btn");
 const quoteText = document.getElementById("quote-text");
 const quoteAuthor = document.getElementById("quote-author");
@@ -48,20 +53,23 @@ if (quoteBtn && quoteText && quoteAuthor) {
     quoteBtn.textContent = "Loading…";
 
     try {
-      const response = await fetch("https://api.quotable.io/random?tags=technology|inspirational");
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
+      const response = await fetch("https://type.fit/api/quotes");
       const data = await response.json();
-      quoteText.textContent = `"${data.content}"`;
-      quoteAuthor.textContent = data.author ? `— ${data.author}` : "";
-    } catch (err) {
-      quoteText.textContent = "Could not load a quote right now. Try again in a moment.";
+
+      const randomQuote = data[Math.floor(Math.random() * data.length)];
+      quoteText.textContent = `"${randomQuote.text}"`;
+      quoteAuthor.textContent = randomQuote.author
+        ? `— ${randomQuote.author}`
+        : "— Unknown";
+    } catch (error) {
+      console.error("Quote API error:", error);
+      quoteText.textContent = "Could not load a quote right now.";
       quoteAuthor.textContent = "";
-      console.log(err);
     } finally {
       quoteBtn.disabled = false;
-      quoteBtn.textContent = "Get a quote";
+      quoteBtn.textContent = "Get Quote";
     }
   });
+} else {
+  console.warn("Quote elements not found in DOM.");
 }
