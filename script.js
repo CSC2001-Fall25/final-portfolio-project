@@ -1,4 +1,6 @@
-// Mobile nav toggle
+// -----------------------------
+// Mobile Navigation Toggle
+// -----------------------------
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 
@@ -15,7 +17,11 @@ if (navToggle && navMenu) {
   });
 }
 
-// Scroll reveal with IntersectionObserver
+
+
+// -----------------------------
+// Reveal-on-Scroll Animation
+// -----------------------------
 const reveals = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -33,11 +39,15 @@ if ("IntersectionObserver" in window) {
 
   reveals.forEach(el => observer.observe(el));
 } else {
-  // Fallback: if no IntersectionObserver support
+  // Fallback if browser doesn't support IntersectionObserver
   reveals.forEach(el => el.classList.add("show"));
 }
 
-// WORKING QUOTE GENERATOR (ZenQuotes API)
+
+
+// -----------------------------
+// WORKING QUOTE GENERATOR (ZENQUOTES API)
+// -----------------------------
 const quoteBtn = document.getElementById("quote-btn");
 const quoteText = document.getElementById("quote-text");
 const quoteAuthor = document.getElementById("quote-author");
@@ -48,6 +58,7 @@ if (quoteBtn && quoteText && quoteAuthor) {
     quoteBtn.textContent = "Loading…";
 
     try {
+      // reliable API for GitHub Pages
       const response = await fetch("https://zenquotes.io/api/random");
       const data = await response.json();
 
@@ -62,4 +73,6 @@ if (quoteBtn && quoteText && quoteAuthor) {
       quoteBtn.textContent = "Get Quote";
     }
   });
+} else {
+  console.warn("Quote widget elements not found in DOM.");
 }
