@@ -14,7 +14,7 @@
 <header class="site-header">
   <div class="nav-inner">
     <div class="logo">BG • Lincoln U</div>
-    <button class="nav-toggle" id="nav-toggle">☰</button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
     <nav id="nav-menu">
       <a href="#hero">Home</a>
       <a href="#about">About</a>
@@ -45,6 +45,7 @@
 
     <div class="hero-actions">
       <a href="#projects" class="btn primary">View My Projects</a>
+      <!-- Make sure resume.pdf is in the repo root -->
       <a href="resume.pdf" class="btn ghost" target="_blank">Download Resume</a>
     </div>
   </div>
@@ -70,20 +71,28 @@
   <div class="about-grid">
     <div class="card reveal">
       <h3>Who I Am</h3>
-      <p>I am a Software Engineering major at Lincoln University with an intended minor in Political Science.</p>
-      <p>I also work as a Project Success Intern and at the Lincoln University Café.</p>
+      <p>
+        I am a Software Engineering major at Lincoln University with an intended minor in Political Science.
+        I like building apps, interactive projects, and interfaces that are simple, clean, and fun to use.
+      </p>
+      <p>
+        I balance my academics with an internship under Project Success and a job working in the Lincoln U Café,
+        which keeps my communication, time management, and teamwork skills sharp.
+      </p>
     </div>
 
     <div class="card reveal">
       <h3>Skills</h3>
       <ul class="pill-list">
         <li>Java</li>
-        <li>HTML/CCSS</li>
+        <li>HTML/CSS</li>
         <li>JavaScript</li>
-        <li>Git & GitHub</li>
+        <li>Git &amp; GitHub</li>
         <li>Communication</li>
         <li>Problem Solving</li>
+        <li>Teamwork</li>
       </ul>
+      <p class="note">Tools: Eclipse, GitHub, MS Office, Code.org App Lab</p>
     </div>
 
     <div class="card reveal">
@@ -91,6 +100,7 @@
       <p class="highlight">Lincoln University of Pennsylvania</p>
       <p>B.S. in Software Engineering — Class of 2028</p>
       <p>GPA: 3.7</p>
+      <p>Minor: Political Science (Intended)</p>
     </div>
   </div>
 </section>
@@ -99,6 +109,7 @@
 <section id="experience" class="section alt">
   <div class="section-header reveal">
     <h2>Experience</h2>
+    <p>Internships, jobs, and campus roles.</p>
   </div>
 
   <div class="timeline">
@@ -107,6 +118,7 @@
       <div class="timeline-content">
         <h3>Project Success Intern</h3>
         <p class="meta">2025 – Present</p>
+        <p>Supporting academic and student success programs while developing communication and organizational skills.</p>
       </div>
     </div>
 
@@ -115,6 +127,7 @@
       <div class="timeline-content">
         <h3>Lincoln University Café Staff</h3>
         <p class="meta">2025 – Present</p>
+        <p>Serving students and staff, handling daily operations, and working in a fast-paced campus environment.</p>
       </div>
     </div>
 
@@ -123,6 +136,7 @@
       <div class="timeline-content">
         <h3>Cashier — Food Lion</h3>
         <p class="meta">Nov 2022 – Present</p>
+        <p>Processing customer orders, maintaining store standards, and collaborating with coworkers in retail.</p>
       </div>
     </div>
   </div>
@@ -132,6 +146,7 @@
 <section id="projects" class="section">
   <div class="section-header reveal">
     <h2>Projects</h2>
+    <p>Interactive apps, games, and prototypes.</p>
   </div>
 
   <div class="projects-grid">
@@ -139,8 +154,12 @@
     <!-- Planet Quiz -->
     <div class="card project-card reveal">
       <h3>Planet Quiz Game</h3>
-      <p class="meta">JavaScript</p>
-      <a href="https://studio.code.org/projects/applab/XIqH2hjD2ALOTX7WQ1atPT6CPZceyzUsN4VNgKr2Wi8" 
+      <p class="meta">JavaScript • Code.org App Lab</p>
+      <p>
+        An interactive quiz game using randomized planet facts, images, and multiple choice
+        answers. Includes scoring, screen transitions, and sound effects.
+      </p>
+      <a href="https://studio.code.org/projects/applab/XIqH2hjD2ALOTX7WQ1atPT6CPZceyzUsN4VNgKr2Wi8"
          class="btn small" target="_blank">Open Project</a>
     </div>
 
@@ -151,7 +170,7 @@
       <p>
         A web application that shows random anime facts using a public API. Built during a hackathon.
       </p>
-      <a href="https://bwxrm.github.io/hackathon-goonerz/" 
+      <a href="https://bwxrm.github.io/hackathon-goonerz/"
          class="btn small" target="_blank">View Live Project</a>
     </div>
 
@@ -159,12 +178,18 @@
     <div class="card project-card reveal">
       <h3>Breakfast Chooser</h3>
       <p class="meta">Java</p>
+      <p>
+        A simple Java app that suggests breakfast options using random logic and a basic user interface.
+      </p>
     </div>
 
     <!-- Workout Planner -->
     <div class="card project-card reveal">
       <h3>Workout Planner</h3>
       <p class="meta">Android Studio</p>
+      <p>
+        An early prototype of a fitness routine planner where users can structure weekly workout plans.
+      </p>
     </div>
 
   </div>
@@ -173,15 +198,15 @@
 <!-- LEADERSHIP -->
 <section id="leadership" class="section alt">
   <div class="section-header reveal">
-    <h2>Leadership</h2>
+    <h2>Leadership &amp; Involvement</h2>
   </div>
 
   <div class="about-grid">
     <div class="card reveal">
       <h3>Clubs</h3>
       <ul class="bullet-list">
-        <li>CS Club</li>
-        <li>Tennis Club</li>
+        <li>Computer Science Club – Member</li>
+        <li>Tennis Club – Active Member</li>
       </ul>
     </div>
 
@@ -189,6 +214,8 @@
       <h3>Awards</h3>
       <ul class="bullet-list">
         <li>Dean’s List</li>
+        <li>Principal’s Award</li>
+        <li>AP Computer Science Award</li>
       </ul>
     </div>
   </div>
@@ -198,6 +225,7 @@
 <section id="quote-section" class="section">
   <div class="section-header reveal">
     <h2>Quick Inspiration</h2>
+    <p>Click to get a random quote.</p>
   </div>
 
   <div class="card quote-card reveal">
@@ -211,6 +239,7 @@
 <section id="contact" class="section alt">
   <div class="section-header reveal">
     <h2>Contact</h2>
+    <p>Open to internships, projects, and tech conversations.</p>
   </div>
 
   <div class="contact-grid">
