@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- Top navigation -->
   <header class="site-header">
     <div class="nav-inner">
       <div class="logo">BG • Lincoln U</div>
-      <button class="nav-toggle" id="nav-toggle">☰</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
       <nav id="nav-menu">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -26,26 +27,28 @@
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO / INTRO SECTION -->
   <section id="hero" class="hero section">
     <div class="hero-content reveal">
       <p class="eyebrow">Software Engineering @ Lincoln University</p>
       <h1>Hi, I’m Bryan Green.</h1>
       <p class="hero-subtitle">
-        I’m a Software Engineering student who enjoys building interactive apps,
-        modern interfaces, and projects that combine tech + creativity.
+        I like turning ideas into interactive experiences. I study Software Engineering
+        and build projects in Java, web tech, and interactive apps like my
+        Planet Quiz Game.
       </p>
 
       <div class="hero-tags">
-        <span class="tag">Software Engineering</span>
+        <span class="tag">B.S. Software Engineering ‘28</span>
         <span class="tag">Project Success Intern</span>
         <span class="tag">Lincoln U Café Staff</span>
         <span class="tag">GPA: 3.7</span>
       </div>
 
       <div class="hero-actions">
-        <a href="#projects" class="btn primary">View My Projects</a>
-        <a href="resume.pdf" class="btn ghost" target="_blank">Download Resume</a>
+        <a href="#projects" class="btn primary">View my projects</a>
+        <!-- When you upload your resume PDF to the repo, update the href below -->
+        <a href="resume.pdf" class="btn ghost" target="_blank">Download resume</a>
       </div>
     </div>
 
@@ -56,28 +59,32 @@
         <div class="orbit-planet orbit-planet-2"></div>
         <div class="orbit-planet orbit-planet-3"></div>
       </div>
-      <p class="hero-caption">Orbit animation inspired by my Planet Quiz Game</p>
+      <p class="hero-caption">
+        Lincoln-themed orbit, inspired by my Planet Quiz Game.
+      </p>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="section">
     <div class="section-header reveal">
       <h2>About Me</h2>
-      <p>Student • Developer • Problem Solver</p>
+      <p>Student, developer, and problem-solver at Lincoln University of Pennsylvania.</p>
     </div>
 
     <div class="about-grid">
       <div class="card reveal">
-        <h3>Who I Am</h3>
+        <h3>Who I am</h3>
         <p>
-          I am a Software Engineering major at Lincoln University with an intended
-          Political Science minor. I like building apps, projects, and interfaces that
-          are simple, clean, and fun to use.
+          I am a Software Engineering major at Lincoln University of Pennsylvania with an
+          intended minor in Political Science. I enjoy learning how software works from
+          both a technical and human perspective and I like building projects that are
+          practical, simple, and fun to use.
         </p>
         <p>
-          I also balance an internship under Project Success and a job working in the
-          Lincoln U Café — sharpening my communication, time management, and teamwork skills.
+          Right now I am balancing coursework, an internship with Project Success,
+          and a job at the campus café, which keeps my time management and communication
+          skills sharp.
         </p>
       </div>
 
@@ -85,46 +92,52 @@
         <h3>Skills</h3>
         <ul class="pill-list">
           <li>Java</li>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>Git & GitHub</li>
-          <li>Problem Solving</li>
+          <li>HTML / CSS</li>
+          <li>Git &amp; GitHub</li>
+          <li>Problem solving</li>
+          <li>Time management</li>
           <li>Communication</li>
-          <li>Teamwork</li>
+          <li>Collaboration</li>
         </ul>
+        <p class="note">
+          Tools I’ve used include Eclipse, GitHub, and Microsoft Office, plus various
+          online IDEs and learning platforms.
+        </p>
       </div>
 
       <div class="card reveal">
         <h3>Education</h3>
-        <p class="highlight">Lincoln University of Pennsylvania</p>
+        <p class="highlight">Lincoln University of Pennsylvania – Oxford, PA</p>
         <p>
           Bachelor of Science in Software Engineering<br />
           Expected Graduation: May 2028
         </p>
-        <p>GPA: 3.7</p>
-        <p>Minor: Political Science (Intended)</p>
-        <p class="note">Coursework: AP CSP, Programming I & II, Data Structures, Algorithms</p>
+        <p>Intended Minor: Political Science</p>
+        <p>GPA: 3.7 / 4.0</p>
+        <p class="note">
+          Relevant coursework includes AP Computer Science Principles, Computer Programming
+          I &amp; II, and foundational topics like data structures and algorithms.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- EXPERIENCE SECTION -->
   <section id="experience" class="section alt">
     <div class="section-header reveal">
       <h2>Experience</h2>
-      <p>Internships, jobs, and campus roles.</p>
+      <p>Work and campus roles that have shaped how I think and collaborate.</p>
     </div>
 
     <div class="timeline">
-
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3>Project Success Intern</h3>
-          <p class="meta">2025 – Present</p>
+          <p class="meta">Lincoln University • 2025 – Present</p>
           <p>
-            Supporting academic programs, communication, and project-driven
-            student success initiatives.
+            Supporting student success initiatives while gaining exposure to professional
+            development, goal-setting, and structured project work in an academic environment.
           </p>
         </div>
       </div>
@@ -132,11 +145,11 @@
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Café Staff – Lincoln University</h3>
-          <p class="meta">2025 – Present</p>
+          <h3>Student Café Staff</h3>
+          <p class="meta">Lincoln University Café • 2025 – Present</p>
           <p>
-            Serve students and staff, handle daily operations, improve
-            customer satisfaction, and manage high-paced work.
+            Delivering fast, friendly service to students and staff, handling orders,
+            payments, and multitasking in a busy campus environment.
           </p>
         </div>
       </div>
@@ -144,11 +157,11 @@
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Cashier – Food Lion</h3>
-          <p class="meta">Nov 2022 – Present</p>
+          <h3>Cashier</h3>
+          <p class="meta">Food Lion – Bryans Road, MD • Nov 2022 – Present</p>
           <p>
-            Process orders, maintain quality service, and work with teams
-            in a busy retail environment.
+            Processed customer transactions, maintained store cleanliness, and worked with
+            a team to keep operations smooth in a high-traffic retail setting.
           </p>
         </div>
       </div>
@@ -156,88 +169,88 @@
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Cashier – Bozzelli’s</h3>
-          <p class="meta">Summer 2022</p>
+          <h3>Cashier</h3>
+          <p class="meta">Bozzelli’s – Arlington, VA • Summer 2022</p>
           <p>
-            Managed high-volume orders and customer experience during fast-paced shifts.
+            Handled high-volume orders, helped keep the shop running efficiently,
+            and made sure customers got the right orders on time.
           </p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="section">
     <div class="section-header reveal">
       <h2>Projects</h2>
-      <p>Interactive apps, games, and class work.</p>
+      <p>A mix of class work, personal projects, and hackathon ideas.</p>
     </div>
 
     <div class="projects-grid">
-
-      <div class="card project-card reveal">
+      <article class="card project-card reveal">
         <h3>Planet Knowledge Quiz Game</h3>
-        <p class="meta">JavaScript • Code.org App Lab</p>
+        <p class="meta">Code.org App Lab • JavaScript</p>
         <p>
-          Interactive quiz game using randomized planet facts, images, and multiple choice
-          logic. Includes scoring, screen transitions, and animations.
+          An interactive quiz game where users identify planets using images, random choices,
+          and fun facts. Features score tracking, conditional logic, and multiple screens.
         </p>
-        <a href="https://studio.code.org/projects/applab/XIqH2hjD2ALOTX7WQ1atPT6CPZceyzUsN4VNgKr2Wi8"
-           class="btn small" target="_blank">Open Project</a>
-      </div>
+        <a class="btn small"
+           href="https://studio.code.org/projects/applab/XIqH2hjD2ALOTX7WQ1atPT6CPZceyzUsN4VNgKr2Wi8"
+           target="_blank">
+          Open live project
+        </a>
+      </article>
 
-      <div class="card project-card reveal">
+      <article class="card project-card reveal">
         <h3>Breakfast Chooser App</h3>
-        <p class="meta">Java</p>
+        <p class="meta">Java • Desktop-style app</p>
         <p>
-          Desktop-style app that recommends meals using random logic,
-          dropdowns, and simple UI.
+          A randomized meal suggestion app that uses simple UI elements and random logic
+          to help users pick a breakfast. Focused on user flow and basic interface design.
         </p>
-      </div>
+      </article>
 
-      <div class="card project-card reveal">
-        <h3>Workout Planner Prototype</h3>
-        <p class="meta">Java • Android Studio</p>
+      <article class="card project-card reveal">
+        <h3>Workout Planner (Prototype)</h3>
+        <p class="meta">Java • Android Studio exploration</p>
         <p>
-          Early design for a fitness routine planner using user inputs,
-          weekly scheduling, and basic UI components.
+          A weekly workout planner concept that lets users pick preferences and routines.
+          Used this as a sandbox to experiment with Android Studio and mobile layouts.
         </p>
-      </div>
+      </article>
 
-      <div class="card project-card reveal">
-        <h3>Budgeting App (Hackathon)</h3>
-        <p class="meta">TigerHacks • Team Project</p>
+      <article class="card project-card reveal">
+        <h3>Budgeting App Prototype</h3>
+        <p class="meta">TigerHacks Hackathon • Team of 3</p>
         <p>
-          Collaborative prototype built under time pressure with a 3-person team.
-          Focused on UI, planning, and user input flow.
+          Collaborated in a small team to design a budgeting app prototype under hackathon
+          time pressure. Focused on basic UI, user inputs, and planning out core features.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
-  <!-- LEADERSHIP -->
+  <!-- LEADERSHIP & INVOLVEMENT -->
   <section id="leadership" class="section alt">
     <div class="section-header reveal">
       <h2>Leadership & Involvement</h2>
-      <p>Clubs, programs, and recognitions.</p>
+      <p>Communities and programs that keep me growing.</p>
     </div>
 
     <div class="about-grid">
-
       <div class="card reveal">
-        <h3>Involvement</h3>
+        <h3>Campus Involvement</h3>
         <ul class="bullet-list">
           <li>Computer Science Club – Member</li>
-          <li>Tennis Club – Active Member</li>
-          <li>HBCU Career Prep Program</li>
-          <li>Children’s Religious Center – Volunteer</li>
+          <li>Tennis Club – Active member</li>
+          <li>HBCU Career Prep Program (Parker Dewey) – Participant</li>
+          <li>Volunteer, Children’s Religious Center – Tech-related education support</li>
         </ul>
       </div>
 
       <div class="card reveal">
-        <h3>Awards</h3>
+        <h3>Awards & Recognition</h3>
         <ul class="bullet-list">
           <li>Dean’s List</li>
           <li>Principal’s Award (x3)</li>
@@ -249,53 +262,58 @@
       <div class="card reveal">
         <h3>Certifications</h3>
         <ul class="bullet-list">
-          <li>IBM – Intro to Artificial Intelligence</li>
+          <li>IBM – Getting Started with Artificial Intelligence</li>
           <li>IBM – Web Development Fundamentals</li>
         </ul>
       </div>
-
     </div>
   </section>
 
-  <!-- QUOTE WIDGET -->
-  <section id="quote-section" class="section">
+  <!-- API / QUOTE WIDGET -->
+  <section class="section" id="quote-section">
     <div class="section-header reveal">
       <h2>Quick Inspiration</h2>
-      <p>Powered by a public quote API.</p>
+      <p>A small API-powered widget built in JavaScript.</p>
     </div>
 
     <div class="card quote-card reveal">
-      <p id="quote-text">Click the button for a tech-inspired quote.</p>
+      <p id="quote-text">Press the button to fetch a developer quote.</p>
       <p id="quote-author" class="quote-author"></p>
-      <button id="quote-btn" class="btn primary">Get Quote</button>
+      <button id="quote-btn" class="btn primary">
+        Get a quote
+      </button>
+      <p class="note">
+        This uses a public quote API with JavaScript’s <code>fetch()</code> function
+        to load data without refreshing the page.
+      </p>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="section alt">
     <div class="section-header reveal">
       <h2>Contact</h2>
-      <p>Open to opportunities, conversations, and internships.</p>
+      <p>Open to internships, campus opportunities, and tech conversations.</p>
     </div>
 
     <div class="contact-grid">
       <div class="card reveal">
-        <h3>Contact Info</h3>
+        <h3>Let’s connect</h3>
         <p>Email: <a href="mailto:bryangreen921@gmail.com">bryangreen921@gmail.com</a></p>
         <p>Location: Lincoln University, PA</p>
         <p>
           LinkedIn:
-          <a href="https://www.linkedin.com/in/bryan-greeen-9482b132b" target="_blank">
+          <a href="http://www.linkedin.com/in/bryan-greeen-9482b132b" target="_blank">
             /in/bryan-greeen-9482b132b
           </a>
         </p>
       </div>
 
       <div class="card reveal">
-        <h3>What I’m Looking For</h3>
+        <h3>What I’m looking for</h3>
         <p>
-          I’m seeking internships, tech projects, and opportunities to develop
-          skills in software engineering, UI/UX, and app development.
+          I am interested in internships, research opportunities, and projects where I can
+          grow as a developer, work with a team, and build real-world experience.
         </p>
       </div>
     </div>
@@ -303,7 +321,7 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© 2025 — Bryan J. Green • Lincoln University Portfolio</p>
+    <p>© 2025 · Bryan J. Green · Lincoln University Portfolio</p>
   </footer>
 
 </body>
